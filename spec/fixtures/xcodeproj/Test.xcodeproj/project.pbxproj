@@ -15,9 +15,9 @@
 		7ACDD27D25F44079002A2742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACDD27B25F44079002A2742 /* LaunchScreen.storyboard */; };
 		7ACDD28825F44079002A2742 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDD28725F44079002A2742 /* TestTests.swift */; };
 		7ACDD29325F44079002A2742 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDD29225F44079002A2742 /* TestUITests.swift */; };
-		7ACDD2A525F440BF002A2742 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2A425F440BF002A2742 /* Nuke */; };
-		7ACDD2AB25F440E3002A2742 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2AA25F440E3002A2742 /* Alamofire */; };
-		7ACDD2B125F44135002A2742 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2B025F44135002A2742 /* RxSwift */; };
+		7ACDD2A525F440BF002A2742 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2A425F440BF002A2742 /* SwiftPackageProductDependency */; };
+		7ACDD2AB25F440E3002A2742 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2AA25F440E3002A2742 /* SwiftPackageProductDependency */; };
+		7ACDD2B125F44135002A2742 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7ACDD2B025F44135002A2742 /* SwiftPackageProductDependency */; };
 		7ACDD2BC25F441BC002A2742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDD2BB25F441BC002A2742 /* AppDelegate.swift */; };
 		7ACDD2BE25F441BC002A2742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDD2BD25F441BC002A2742 /* SceneDelegate.swift */; };
 		7ACDD2C025F441BC002A2742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDD2BF25F441BC002A2742 /* ViewController.swift */; };
@@ -131,9 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7ACDD2B125F44135002A2742 /* RxSwift in Frameworks */,
-				7ACDD2A525F440BF002A2742 /* Nuke in Frameworks */,
-				7ACDD2AB25F440E3002A2742 /* Alamofire in Frameworks */,
+				7ACDD2B125F44135002A2742 /* BuildFile in Frameworks */,
+				7ACDD2A525F440BF002A2742 /* BuildFile in Frameworks */,
+				7ACDD2AB25F440E3002A2742 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +341,9 @@
 			);
 			name = "Dev Test";
 			packageProductDependencies = (
-				7ACDD2A425F440BF002A2742 /* Nuke */,
-				7ACDD2AA25F440E3002A2742 /* Alamofire */,
-				7ACDD2B025F44135002A2742 /* RxSwift */,
+				7ACDD2A425F440BF002A2742 /* SwiftPackageProductDependency */,
+				7ACDD2AA25F440E3002A2742 /* SwiftPackageProductDependency */,
+				7ACDD2B025F44135002A2742 /* SwiftPackageProductDependency */,
 			);
 			productName = Test;
 			productReference = 7ACDD26D25F44078002A2742 /* Dev Test.app */;
@@ -545,9 +545,9 @@
 			);
 			mainGroup = 7ACDD26425F44078002A2742;
 			packageReferences = (
-				7ACDD2A325F440BF002A2742 /* XCRemoteSwiftPackageReference "Nuke" */,
-				7ACDD2A925F440E3002A2742 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7ACDD2AF25F44135002A2742 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7ACDD2A325F440BF002A2742 /* RemoteSwiftPackageReference */,
+				7ACDD2A925F440E3002A2742 /* RemoteSwiftPackageReference */,
+				7ACDD2AF25F44135002A2742 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 7ACDD26E25F44078002A2742 /* Products */;
 			projectDirPath = "";
@@ -934,7 +934,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -953,7 +953,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -974,6 +974,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.TestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -995,6 +996,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.TestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1014,6 +1016,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.TestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1033,6 +1036,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiswe.TestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1052,7 +1056,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1071,7 +1075,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1092,6 +1096,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1113,6 +1118,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1132,6 +1138,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1151,6 +1158,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Stage-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1170,7 +1178,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1189,7 +1197,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1210,6 +1218,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1231,6 +1240,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1250,6 +1260,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1269,6 +1280,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kiswe.Prod-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1373,7 +1385,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7ACDD2A325F440BF002A2742 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+		7ACDD2A325F440BF002A2742 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke.git";
 			requirement = {
@@ -1381,7 +1393,7 @@
 				minimumVersion = 9.3.0;
 			};
 		};
-		7ACDD2A925F440E3002A2742 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		7ACDD2A925F440E3002A2742 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1389,7 +1401,7 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		7ACDD2AF25F44135002A2742 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		7ACDD2AF25F44135002A2742 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -1400,19 +1412,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7ACDD2A425F440BF002A2742 /* Nuke */ = {
+		7ACDD2A425F440BF002A2742 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ACDD2A325F440BF002A2742 /* XCRemoteSwiftPackageReference "Nuke" */;
+			package = 7ACDD2A325F440BF002A2742 /* RemoteSwiftPackageReference */;
 			productName = Nuke;
 		};
-		7ACDD2AA25F440E3002A2742 /* Alamofire */ = {
+		7ACDD2AA25F440E3002A2742 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ACDD2A925F440E3002A2742 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 7ACDD2A925F440E3002A2742 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		7ACDD2B025F44135002A2742 /* RxSwift */ = {
+		7ACDD2B025F44135002A2742 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7ACDD2AF25F44135002A2742 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7ACDD2AF25F44135002A2742 /* RemoteSwiftPackageReference */;
 			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

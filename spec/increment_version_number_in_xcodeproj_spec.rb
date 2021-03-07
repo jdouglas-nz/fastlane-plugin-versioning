@@ -109,6 +109,7 @@ describe Fastlane::Actions::IncrementVersionNumberInXcodeprojAction do
             bump_type: 'minor'
           )
         end")
+        file.runner.execute(:bump)
 
       pbxproj_path = File.join(xcodeproj_path, "project.pbxproj")
 
@@ -119,7 +120,6 @@ describe Fastlane::Actions::IncrementVersionNumberInXcodeprojAction do
       alamofire_line = line_from_file(19, pbxproj_path)
       alamofire_line_2 = line_from_file(136, pbxproj_path)
 
-      file.runner.execute(:bump)
 
       nuke_line_test = line_from_file(18, pbxproj_path)
 
