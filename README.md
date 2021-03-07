@@ -13,6 +13,7 @@ This project is a [fastlane](https://github.com/fastlane/fastlane) plugin. To ge
 fastlane add_plugin versioning
 ```
 
+*Note: please ensure you have set your versions through Xcode's UI at least once before running these actions - otherwise you will run into some cryptic undefined (method/hash) for scheme ruby errors*
 ## About versioning
 
 Extends fastlane versioning actions. Allows to set/get versions without using agvtool and do some other small tricks.
